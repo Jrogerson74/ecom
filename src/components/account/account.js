@@ -53,6 +53,7 @@ class Account extends Component {
         }
         return jsx;
     }
+
     render() {
         return (
             <div className='account'>

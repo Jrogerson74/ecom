@@ -9,8 +9,12 @@ function PurchaseDetailLabel({className, title, value}) {
         </div>
     )
 }
+
+
 // total: 19.40,
 // creditCard: '-0000',
+
+
 class PurchaseDetail extends Component {
     render() {
         const { className, orderNumber, orderDate, user, total, creditCard } = this.props;
@@ -30,7 +34,7 @@ class PurchaseDetail extends Component {
                  className='purchase-detail__shipping-address'
                  title='Shipping Address'
                  value={nameAddress}/>
-                 <PurchaseDetailLabel
+                <PurchaseDetailLabel
                  className='purchase-detail__total'
                  title='Total'
                  value={total}/>
@@ -38,6 +42,8 @@ class PurchaseDetail extends Component {
                  className='purchase-detail__credit-card'
                  title='Credit Card'
                  value={creditCard}/>
+                 <a className='purchase-detail__track-shipment'>Track Shipment</a>
+                 <a className='purchase-detail__print-receipt'>Print Receipt</a>
             </div>
         )
     }

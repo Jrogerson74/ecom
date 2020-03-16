@@ -14,8 +14,10 @@ class SignIn extends Component {
     }
 
     onSubmit = (fields) => {
-        console.log(fields);
+        this.props.signIn(fields);
+        this.props.history.push('/account');
     }
+
     render() {
         return (
             <div className='sign-in'>
@@ -28,4 +30,4 @@ class SignIn extends Component {
 
 SignIn = connect(null, actions)(SignIn);
 
-export default SignIn; 
+export default SignIn;

@@ -16,6 +16,7 @@ class SignUp extends Component {
     onSubmit = (fields) => {
         console.log(fields);
     }
+
     render() {
         return (
             <div className='sign-up'>
