@@ -9,4 +9,3 @@ function CartButton({className, icon, onClick}) {
 }
 
 export default CartButton;
-© 2020 GitHub, Inc.
